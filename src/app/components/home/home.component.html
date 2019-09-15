@@ -1,0 +1,77 @@
+<div class="homePage">
+    <div class="sliderContainer">
+
+      <!-- ***************** Animated Carousel ************************ -->
+      <div class="pic-wrapper">
+        <figure class="pic-1">
+          <div class="figurecaption">
+            Make Your Events Tasteful.. <br>
+            <button class="checkMenu" mat-raised-button color="primary">Check Menu</button>
+          </div>
+        </figure>
+        <figure class="pic-2">
+          <div class="figurecaption">
+            Quality Food.. <br>
+            <button class="checkMenu" mat-raised-button color="primary">Check Menu</button>
+          </div>
+        </figure>
+        <figure class="pic-3">
+          <div class="figurecaption">
+            Innovative Menu.. <br>
+            <button class="checkMenu" mat-raised-button color="primary">Check Menu</button>
+          </div>
+        </figure>
+        <figure class="pic-4">
+          <div class="figurecaption">
+            Satisfactory Arrangements.. <br>
+            <button class="checkMenu" mat-raised-button color="primary">Check Menu</button>
+          </div>
+        </figure>
+      </div>
+      <!-- ************************************************************ -->
+      <div class="headerContainer">
+        <div class="logoContainer">
+          <!-- <a href="#"><img src="../../../assets/images/logo.jpg" alt="Ahbaab Catering" /></a> -->
+          <a href="#"><img src="../../../assets/images/ahbaab-original-logo.png" alt="Ahbaab Catering" /></a>
+        </div>
+        <div class="navContainer">
+          <ul>
+            <li routerLink="/home">Home</li>
+            <li routerLink="/">About</li>
+            <li routerLink="/">Menu Packages</li>
+            <li routerLink="/">Services</li>
+            <li routerLink="/">Gallery</li>
+            <li routerLink="/home">Contact Us</li>
+          </ul>
+        </div>
+          <button class="menuButton" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu class="toggleMenu" #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon>
+              <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>One more</span>
+            </button>
+          </mat-menu>
+      </div>
+    </div>
+    <app-about-us></app-about-us>
+    <app-services></app-services>
+    <app-portfolio></app-portfolio>
+    <app-wedding></app-wedding>
+    <app-corporate></app-corporate>
+    <app-contact-us></app-contact-us>
+    <app-footer></app-footer>
+</div>

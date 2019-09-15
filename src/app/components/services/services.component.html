@@ -1,0 +1,93 @@
+
+<div class="servicesPage">
+    <div class="servicesContent">
+        <h1>Our Services</h1>
+        <p>
+          A range of services adapted to your needs for any your events. Its eminence and 
+          excellence in catering and cuisines and event management for weddings, business 
+          events and etc.
+        </p>
+    </div>
+  <ngx-hm-carousel
+    [(ngModel)]="currentIndex"
+  
+    show-num="auto"
+    [breakpoint]="breakpoint"
+    [autoplay]="true"
+    [autoplay-speed]="2000"
+    [between-delay]="500"
+    [infinite]="infinite"
+    [drag-many]="true"
+    [aniTime]="1000"
+    [data]="avatars"
+    class="carousel c-accent">
+  
+    <section ngx-hm-carousel-container class="content">
+      <article class="item cursor-pointer"
+        ngx-hm-carousel-item
+        *ngFor="let avatar of avatars; let i = index"
+        
+          [ngClass]="{'visible': currentIndex===i}">
+        <div class="img d-flex justify-content-center align-items-center" (click)="click(i)">
+          <div class="carouselIem">
+            <div class="servicesLink">
+              <a href="#"> </a>
+            </div>
+            <div class="carouselIemContent">
+              <h2>
+                <a href="#">{{avatar.title}}</a>
+              </h2>
+              <p>{{avatar.description}}</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <ng-template #infiniteContainer></ng-template>
+    </section>
+  
+    <ng-template #carouselContent let-avatar let-i="index">
+      <article class="item cursor-pointer"
+        [ngClass]="{'visible': currentIndex===i}">
+        <div class="img d-flex justify-content-center align-items-center" (click)="click(i)">
+            <div class="carouselIem">
+                <div class="servicesLink">
+                  <a href="#"> </a>
+                </div>
+                <div class="carouselIemContent">
+                  <h2>
+                    <a href="#">{{avatar.title}}</a>
+                  </h2>
+                  <p>{{avatar.description}}</p>
+                </div>
+            </div>
+        </div>
+      </article>
+    </ng-template>
+  
+    <ng-template #carouselPrev>
+      <div class="click-area">
+        <i class="material-icons">keyboard_arrow_left</i>
+      </div>
+    </ng-template>
+    <ng-template #carouselNext>
+      <div class="click-area">
+        <i class="material-icons">keyboard_arrow_right</i>
+      </div>
+    </ng-template>
+  
+    <ng-template #carouselDot let-model>
+      <div class="ball bg-accent"
+        [class.visible]="model.index === model.currentIndex"></div>
+    </ng-template>
+  
+    <!-- <ng-template #carouselProgress let-progress>
+      <div class="progress"></div>
+    </ng-template> -->
+  
+  </ngx-hm-carousel>
+  </div>
+  <div class="servicesFooter">
+    <!-- <div> -->
+      <h1>We Make Your Dream Come True</h1>
+    <!-- </div> -->
+  </div>

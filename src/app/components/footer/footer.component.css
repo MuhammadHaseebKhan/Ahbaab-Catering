@@ -1,0 +1,13 @@
+.footer {
+  float: left;
+  width: 100%
+}
+.content {
+  padding: 30px 50px;
+  background: #2e3b88;
+  color: #fff;
+}
+.content p {
+  font-size: 16px;
+  font-weight: 500;
+}

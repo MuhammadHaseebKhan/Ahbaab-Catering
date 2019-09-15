@@ -1,0 +1,70 @@
+.contactusPage {
+  height: 80vh;
+  float: left;
+  width: 100%;
+  background: url('../../../assets/images/contact-us.jpg') no-repeat fixed center;
+  background-size: cover;
+  padding: 40px 20px;
+  color: #fff;
+}
+.contactusPage h1 {
+  font-family: "Alex Brush";
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+.contentContainer {
+  display: flex;
+}
+.contactForm {
+  width: 50%;
+  text-align: center;
+}
+.contactForm mat-form-field {
+  width: 70%;
+}
+.inputField {
+  width: 80%;
+  border: 1px solid #fff;
+  padding: 14px;
+  background: #ffffff99;
+  margin: 8px 0px;
+  resize: none;
+  color: #2e3b88;
+  font-size: 16px;
+}
+.submitBtn {
+  border: 1px solid #fff;
+  outline: none;
+  background: #ffffff99;
+  width: 250px;
+  width: 80%;
+  padding: 14px;
+  transition: 0.2s;
+  font-size: 16px;
+  color: #2e3b88;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.submitBtn:hover { 
+  background: #2e3b88;
+  color: #fff;
+  transition: 0.2s;
+}
+.contactDetails {
+  width: 50%;
+  padding: 0px 40px;
+}
+.contactDetails h3 { 
+  margin-bottom: 40px;
+}
+.contactDetails h4 {
+  margin: 25px 0px;
+}
+
+::Placeholder {
+  font-size: 16px;
+  color: #2e3b88;
+}

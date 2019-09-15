@@ -1,0 +1,264 @@
+
+.homePage {
+  font-family: "Arvo", Arial, Tahoma, sans-serif;
+}
+.sliderContainer{
+  float: left;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ************* Animated Carousel ************ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  
+  animation: slideShow 24s linear infinite 0s;
+  -o-animation: slideShow 24s linear infinite 0s;
+  -moz-animation: slideShow 24s linear infinite 0s;
+  -webkit-animation: slideShow 24s linear infinite 0s;
+}
+
+.figurecaption {
+  /* position: absolute;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    border: 1px solid;
+    width: 100%;
+    bottom: 130px;
+    text-align: center;
+    background: rgba(42, 53, 121, 0.4); */
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    /* border: 1px solid; */
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    /* background: rgba(42, 53, 121, 0.4); */
+}
+.checkMenu {
+  font-size: 19px;
+  padding: 4px 18px;
+  margin-top: 30px;
+}
+
+.pic-1 {
+  opacity: 1;
+  /* background: url('../../../assets/images/cover1.jpg') no-repeat center center; */
+  background: url('http://qnfcargo.com/ahbaab/wp-content/uploads/2016/12/home_burger_slider_bg.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-2 {
+  animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -moz--animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  background: url('../../../assets/images/cover2.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-3 {
+  animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -moz--animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  background: url('../../../assets/images/cover3.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pic-4 {
+  animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -moz--animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+  /* background: url('../../../assets/images/cover4.jpg') no-repeat center center; */
+  background: url('http://qnfcargo.com/ahbaab/wp-content/uploads/2016/12/home_burger_slider_bg3.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* keyframes*/
+
+@keyframes 
+slideShow {  0% {
+ opacity: 0;
+ transform:scale(1);
+ -ms-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ transform:scale(1.1);
+ -ms-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ transform:scale(1);
+ -ms-transformm:scale(1);
+}
+}
+ @-o-keyframes 
+slideShow {  0% {
+ opacity: 0;
+ -o-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -o-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -o-transformm:scale(1);
+}
+}
+ @-moz-keyframes 
+slideShow {  0% {
+ opacity: 0;
+ -moz-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -moz-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -moz-transformm:scale(1);
+}
+}
+ @-webkit-keyframes 
+slideShow {  0% {
+ opacity: 0;
+ -webkit-transform:scale(1);
+}
+ 5% {
+ opacity: 1
+}
+ 25% {
+ opacity: 1;
+}
+ 30% {
+ opacity: 0;
+ -webkit-transform:scale(1.1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transformm:scale(1);
+}
+}
+/* ************* ****************** ************ */
+
+.headerContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  color: #fff;
+  width: 100%;
+  float: left;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+.navContainer ul {
+  display: flex;
+}
+.navContainer ul li {
+  margin-right: 30px;
+  margin-top: 15px;
+  list-style: none;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 20px 8px;
+  transition: 0.3s;
+}
+.navContainer ul li:hover {
+  background: #2e3b88;
+  cursor: pointer;
+  transition: 0.3s;
+ }
+.logoContainer {
+  position: relative;
+}
+.logoContainer a:hover { 
+  cursor: pointer;
+}
+.logoContainer img {
+  left: 15px;
+  position: absolute;
+  top: 0;
+  /* height: 80px;
+  width: 120px;
+  border-radius: 100%; */
+  /* transform: skewY(-10deg); */
+}
+.menuButton {
+  display: none;
+}
+mat-menu{
+  display: none !important;
+}
+.carouselCaptionContent-MainSlider {
+  margin-bottom: 50px;
+}
+
+
+/* **************** Media Queries ****************** */
+@media screen and (max-width: 850px) {
+  .menuButton {
+    display: block;
+  }
+  mat-menu {
+    display: inline-block;
+  }
+  .navContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+.corporateCateringPage {
+  float: left;
+  min-height: 80vh;
+}
+.contentContainer {
+  padding: 20px;
+  padding-top: 60px;
+  display: flex;
+}
+.imgContainer {
+  width: 50%;
+  padding: 20px;
+}
+.imgContainer img { 
+  width: 100%;
+}
+.content {
+  width: 50%;
+  padding: 20px 50px;
+}
+.content h1 {
+  font-family: "Alex Brush";
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}

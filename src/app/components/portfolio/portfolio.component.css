@@ -1,0 +1,75 @@
+.portfolioPage {
+  width: 100%;
+  float: left;
+  padding: 80px 50px;
+}
+.portfolioContent{
+  text-align: center;
+  width: 80%;
+  margin: 40px auto;
+}
+.portfolioContent h1 {
+  font-family: "Alex Brush";
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+}
+.portfolioContent h1::after {
+  background: rgba(0, 0, 0, 0) url('http://qnfcargo.com/ahbaab1/wp-content/themes/weddingreval/img/section-line.png') no-repeat scroll 0 0;
+  content: "";
+  height: 100px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  width: 91px;
+}
+.portfolioContent p{
+  font-size: 16px;
+  line-height: 1.8;
+}
+.carousel {
+  color: white;
+}
+.carousel .content {
+  display: flex;
+}
+.carousel .content .item {
+  width: 100%;
+  padding: 0.5em;
+  display: block;
+  opacity: 0.5;
+  transition: opacity 0.295s linear 0.2s;
+}
+.carousel .content .item.visible {
+  opacity: 1;
+}
+.carousel .content .item .img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+.carousel .ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid;
+  opacity: 0.5;
+}
+.carousel .ball.visible {
+  opacity: 1;
+}
+.carousel .click-area {
+  width: 50px;
+  text-align: center;
+}
+.carousel .click-area i {
+  font-size: 3em;
+}

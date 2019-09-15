@@ -1,0 +1,51 @@
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* ************ General Styles ************** */
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+	margin: 0;
+	padding: 0;
+}
+.no_space {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+.space70 {
+	float: left;
+	width: 100%;
+	margin-top: 70px;
+}
+.space90 {
+	float: left;
+	width: 100%;
+	margin-top: 90px;
+}
+body {
+	font-family: 'Poppins', sans-serif;    
+	overflow-x: hidden; 
+	width:100%;
+}
+.alt-font {
+	font-family: Verdana, Geneva, sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+iframe {
+    width: 100%;
+}
+input:focus{outline:none}
+textarea:focus{outline:none}
+select:focus{outline:none}
+/* ***************************************** */
+
+.transition {
+	transition: all 0.2s ease-in-out;
+}
